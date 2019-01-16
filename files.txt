@@ -1,0 +1,57 @@
+!https://tim.jyu.fi/view/kurssit/tie/ohj2/2018k/ht/vekahaak = Suunnitelma TIMissä
+
+<h3>Kuvat</h3>
+
+Kuvat/KalexUusiJasen.png = ikkuna, joka aukeaa kun painetaan "uusi jäsen" painiketta pääikkunassakK
+Kuvat/KalexUusiOlut2.png = ikkuna, joka aukeaa jos tietorakenteeseen on jo tallennettu käyttäjän omiin oluisiin lisäämä olut
+Kuvat/KalexUusiOlut.png = ikkuna, joka aukeaa kun painetaan käyttäjän oluissa "lisää olut"
+Kuvat/KalexLisaaOlut.png = Näkymä joka aukeaa kun painetaan käyttäjän kohdalla "näytä käyttäjän oluet"
+Kuvat/KalexGUIView.png = ohjelman pääikkuna
+Kuvat/KalexAloitusikkuna.png = ohjelman aloitusikkuna
+Kuvat/bishoon.png = Tietoja-ikkunan kuva
+Kuvat/tietorakenne.png = Kuva tietorakenteesta 
+
+<h3>Tietorakenteet</h3>
+oluet.dat = Tietorakenne oluille
+kayttajat.dat = Tietorakenne käyttäjille
+
+<h3>Tietorakenteiden käsittely</h3>
+src/kalex/Kalex.java = Kalex-luokka
+src/kalex/Kayttaja.java = Käyttäjä-luokka
+src/kalex/Kayttajat.java = Käyttäjät-luokka
+src/kalex/KayttajanOlut.java = Luokka käyttäjän kirjaaman oluen hallintaan
+src/kalex/KayttajanOluet.java = Luokka kaikkien käyttäjien kirjaamien oluiden hallintaan
+src/kalex/SailoException.java = Poikkeusluokka käyttöliittymästä tuleville virheille
+src/kalex/Oluet.java = Luokka oluiden hallintaan 
+src/kalex/Olut.java = Luokka oluiden tietojen hallintaan
+
+<h3>JavaFX</h3>
+src/fxKalex/kalex.css = Tyylitiedosto (ei vielä muutettu mitään)
+src/fxKalex/KalexGUIController.java = Ohjain, joka käsittelee käyttöliittymästä tulevat tapahtumat
+src/fxKalex/KalexGUIView.fxml = Ohjelman varsinainen käyttöliittymä
+src/fxKalex/KalexKayttajanOluetController.java = Ohjain käyttäjän oluiden käsittelyyn
+src/fxKalex/KalexKayttajanOluetView.fxml = Kääyttäjän oluiden käyttöliittymä
+src/fxKalex/KalexLisaaUusiOlutController.java = Ohjain uuden oluen lisäämiselle
+src/fxKalex/KalexLisaaUusiOlutView.fxml = Lomake, joka aukeaa kun painetaan "Lisää uusi olut"
+src/fxKalex/KalexMain.java = Ohjelman käynnistävä pääluokka
+src/fxKalex/KalexMuokkaaKirjausController.java = Ohjain käyttäjän oluen muokkaamiseen
+src/fxKalex/KalexMuokkaaKirjausView.fxml = Käyttöliittymäikkuna tietokannasta löytyvän oluen lisäämiselle
+src/fxKalex/KalexTietoja.fxml = Käyttöliittymäikkuna sovellustietojen näyttämiselle
+src/fxKalex/KalexUusiKayttajaController.java = Ohjain uuden käyttäjän lisäämiselle
+src/fxKalex/KalexUusiKayttajaView.fxml = Käyttöliittymäikkuna uuden käyttäjän lisäämiselle
+
+<h3>Testit</h3>
+src/kalex/test/KayttajaTest.java = Luokka Kayttaja-luokan testeille
+src/kalex/test/KayttajatTest.java = Luokka Kayttajat-luokan testeille
+src/kalex/test/OlutTest.java = Luokka Olut-luokan testeille
+src/kalex/test/OluetTest.java = Luokka Oluet-luokan testeille
+
+<h3>Muuta</h3>
+.classpath = Eclipsen luokkapolku
+.project = Eclipsen projekti
+build.fxbuild = Ant-skripti joka tekee .jarin
+.settings/org.eclipse.jdt.core.prefs = kääntäjän varoitukset
+.new-fxml-settings.xml = asetukset
+Kalex.jar = Ohjelman ajettava tiedosto
+KalexAnt.xml = Ohjelman Ant-skripti
+ComTest.ini = Luokkien testien asetukset
