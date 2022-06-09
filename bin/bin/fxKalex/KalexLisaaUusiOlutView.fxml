@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fi.jyu.mit.fxgui.ListChooser?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxKalex.KalexLisaaUusiOlutController">
+   
+   <left>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <ListChooser fx:id="chooserOlut" prefHeight="291.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin></ListChooser>
+         </center>
+         <top>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane prefHeight="30.0" prefWidth="184.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="70.0" prefWidth="48.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="142.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="30.0" minHeight="20.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="16.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Oluet" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Label text="Hae oluita" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="8.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="hakuehto" onKeyReleased="#handleHaku" prefHeight="25.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </left>
+   <bottom>
+      <GridPane prefHeight="51.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="351.0" minWidth="0.0" prefWidth="207.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="562.0" minWidth="10.0" prefWidth="149.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="113.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="257.0" minWidth="10.0" prefWidth="89.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnTallennaOlut" mnemonicParsing="false" onAction="#handleTallenna" prefHeight="25.0" prefWidth="65.0" text="Tallenna" GridPane.columnIndex="3">
+               <opaqueInsets>
+                  <Insets right="10.0" />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#handlePeruuta" prefHeight="25.0" prefWidth="66.0" text="Peruuta" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Button>
+         </children>
+      </GridPane>
+   </bottom>
+   <center>
+      <Pane minWidth="-Infinity" prefHeight="349.0" prefWidth="298.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane hgap="10.0" layoutY="-2.0" prefHeight="352.0" prefWidth="329.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="128.0" />
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="310.0" minWidth="10.0" prefWidth="227.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="35.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label text="Nimi" />
+                  <Label text="Panimo" GridPane.rowIndex="1" />
+                  <Label text="Maa" GridPane.rowIndex="2" />
+                  <Label text="Tyyppi" GridPane.rowIndex="3" />
+                  <Label text="Prosentit" GridPane.rowIndex="4" />
+                  <Label text="EBU" GridPane.rowIndex="5" />
+                  <Label text="Arvosana" GridPane.rowIndex="6" />
+                  <Label text="Kommentit" GridPane.rowIndex="7" />
+                  <TextField fx:id="editNimi" promptText="esim.  Matti Meikäläinen" GridPane.columnIndex="1" />
+                  <TextField fx:id="editPanimo" promptText="esim. Harwall" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="editMaa" promptText="esim. Suomi" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="editTyyppi" promptText="esim. Lager" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="editProsentit" promptText="esim.  4.7" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="editEbu" promptText="esim.  22" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="editArvosana" promptText="esim. 3.5" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextArea fx:id="areaKommentit" prefHeight="200.0" prefWidth="200.0" promptText="Kommenttisi oluesta..." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleTyhjenna" prefHeight="25.0" prefWidth="107.0" text="Tyhjennä tiedot" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
